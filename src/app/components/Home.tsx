@@ -6,7 +6,9 @@ import '../styles/Home.css';
 
 
 function Home() {
-    return <div id="home">
+    return (
+    <>
+    <section id="home">
     <div id="box" />
       <Typist startDelay={1000} cursor={{ hideWhenDone: false }}>
           <h1>
@@ -22,7 +24,9 @@ function Home() {
         Email me!
       </Button>
       </div>
-  </div>;
+    </section>;
+    </>
+  );
   }
   
   export default Home;

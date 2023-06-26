@@ -5,8 +5,8 @@ import '../styles/Portfolio.css';
 function Portfolio() {
 
   return (
-    <div>
-    <div id="portfolio">
+    <>
+    <section id="portfolio">
       <h1 className="section">/portfolio</h1>
       <div id="portfolio-content">
       <p>Check out more of my GitHub projects <a href="https://github.com/epicjoanna?tab=repositories">here</a>!</p>
@@ -60,8 +60,8 @@ src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115
       </Carousel>
     </div>
     </div>
-    </div>
-    </div>
+    </section>
+    </>
   );
 }
 

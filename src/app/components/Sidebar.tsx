@@ -13,7 +13,7 @@ function Sidebar() {
   ];
 
   return (
-    <div>
+    <>
       <div id="nav">
       {links.map((link, i) => (
       <div>{link}</div>
@@ -30,7 +30,7 @@ function Sidebar() {
         <LinkedInIcon className="tag" fontSize="large" />
       </a>
       </div>
-    </div>
+    </>
   );
 }
 
