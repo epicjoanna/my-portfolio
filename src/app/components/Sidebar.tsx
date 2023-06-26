@@ -12,23 +12,27 @@ function Sidebar() {
     <a href="#portfolio">/portfolio</a>
   ];
 
-  return (
-    <>
-      <div id="nav">
-      {links.map((link, i) => (
-      <div>{link}</div>
-      ))}
-      </div>
-      <div className="sidebarLogos">
-      <a href="mailto:joannameijardine@gmail.com">
+  const socialLinks = [
+    <a href="mailto:joannameijardine@gmail.com">
         <EmailRoundedIcon className="tag" fontSize="large"/>
-      </a>
+      </a>,
       <a href="https://github.com/epicjoanna">
         <GitHubIcon className="tag" fontSize="large" />
-      </a>
+      </a>,
       <a href="https://www.linkedin.com/in/joannajardine/">
         <LinkedInIcon className="tag" fontSize="large" />
       </a>
+  ];
+
+  return (
+    <>
+      <nav id="nav">
+      {links.map((link, i) => (
+      <div>{ link }</div>
+      ))}
+      </nav>
+      <div className="sidebar-logos">
+      { socialLinks }
       </div>
     </>
   );

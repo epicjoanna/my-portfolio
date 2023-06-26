@@ -6,7 +6,7 @@ function Experience() {
     <>
     <section id="experience">
       <h1 className="section">/experience</h1>
-      <div id="experience-content">
+      <div className="experience-content">
       <p>
         text
       </p>

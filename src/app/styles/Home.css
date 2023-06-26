@@ -5,7 +5,7 @@
         width: 800px;
     }
     
-    #box {
+    .box {
         background: url("../assets/me.jpg");
         -webkit-background-size: cover;
         background-size: cover;
@@ -28,21 +28,26 @@
         }
     }
 
-    #emailbutton {
-        font-size: 20px;
-        font-family: 'NTR';
-        font-weight: bold;
+    .email-button {
+        font-size: 20px !important;
+        font-family: 'NTR' !important;
+        font-weight: bold !important;
         text-decoration: none !important;
-        text-transform: none;
+        text-transform: none !important;
         background: #a0fb8e !important;
-        color: #0f2634;
-        transition: all .3s ease-in-out; 
+        color: #0f2634 !important;
+        transition: all .3s ease-in-out;
     }
 
-    #emailbutton:hover {
+    .email-button:hover {
+        color: #0f2634 !important;
         background: #028aa2 !important;
         transform: scale(1.1); 
-      }
+    }
+
+    .button-section {
+        margin: 40px 0px 0px 0px;
+    }
 
     .Typist {
     font-size: 60px;

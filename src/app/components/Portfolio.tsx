@@ -2,67 +2,107 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import '../styles/Portfolio.css';
 
-function Portfolio() {
+
+type Project = {
+  title: string;
+  description: string;
+  tech: string;
+  repo: string;
+  demo: string;
+  image: string;
+}
+
+class Portfolio extends React.Component {
+
+  constructor(props: {} | Readonly<{}>) {
+    super(props);
+    this.state = {
+      expanded: true,
+      activeKey: "1"
+    };
+    this.handleSelect = this.handleSelect.bind(this);
+  }
+
+  handleSelect(eventKey: any) {
+    this.setState({
+      activeKey: eventKey
+    });
+  }
+
+  render() {
+
+    const carouselProjects: Record<string, Project> = {
+    "Item one": {
+      title: "Item one",
+      description: "Description",
+      tech: "Technologies",
+      repo: "Repository",
+      demo: "Demo",
+      image: "https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg"
+    },
+    "Item two": {
+      title: "Item two",
+      description: "Description",
+      tech: "Technologies",
+      repo: "Repository",
+      demo: "Demo",
+      image: "https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg"
+    },
+    "Item three": {
+      title: "Item three",
+      description: "Description",
+      tech: "Technologies",
+      repo: "Repository",
+      demo: "Demo",
+      image: "https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg"
+    },
+    "Item four": {
+      title: "Item four",
+      description: "Description",
+      tech: "Technologies",
+      repo: "Repository",
+      demo: "Demo",
+      image: "https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg"
+    },
+  };
 
   return (
-    <>
     <section id="portfolio">
       <h1 className="section">/portfolio</h1>
-      <div id="portfolio-content">
+      <div className="portfolio-content">
       <p>Check out more of my GitHub projects <a href="https://github.com/epicjoanna?tab=repositories">here</a>!</p>
 
       <div style={{ display: 'block', width: 1000 }}>
       <Carousel>
-        <Carousel.Item interval={1500}>
+
+      {Object.keys(carouselProjects).map((key, i) => (
+        <Carousel.Item interval={ 1500 }>
           <img
             className="d-block w-100"
-src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"
-            alt="Image One"
+            src={carouselProjects[key]["image"]}
+            alt={key}
           />
-          <Carousel.Caption>
-            <h3>Label for first slide</h3>
-            <p>Sample Text for Image One</p>
-          </Carousel.Caption>
+          <div className="carousel-caption">
+            <Carousel.Caption>
+              <h3>{carouselProjects[key]["title"]}</h3>
+              <p>
+                {carouselProjects[key]["description"]}
+                <p>
+                  {carouselProjects[key]["tech"]}
+                </p>
+              </p>
+              {carouselProjects[key]["repo"]}
+              {carouselProjects[key]["demo"]}
+            </Carousel.Caption>
+          </div>
         </Carousel.Item>
-        <Carousel.Item interval={1500}>
-          <img
-            className="d-block w-100"
-src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
-            alt="Image Two"
-          />
-          <Carousel.Caption>
-            <h3>Label for second slide</h3>
-            <p>Sample Text for Image Two</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={1500}>
-          <img
-            className="d-block w-100"
-src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
-            alt="Image Two"
-          />
-          <Carousel.Caption>
-            <h3>Label for second slide</h3>
-            <p>Sample Text for Image Two</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={1500}>
-          <img
-            className="d-block w-100"
-src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
-            alt="Image Two"
-          />
-          <Carousel.Caption>
-            <h3>Label for second slide</h3>
-            <p>Sample Text for Image Two</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+      ))}
       </Carousel>
     </div>
     </div>
     </section>
-    </>
   );
+  };
 }
 
 export default Portfolio;

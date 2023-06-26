@@ -2,7 +2,7 @@ import '../styles/About.css';
 
 function About() {
 
-  const about = (
+  const aboutDescription = (
     <p>
       I'm interested in full-stack development, regularly working on projects outside of work. 
       I am currently working as a <b>Software Developer</b> at
@@ -12,28 +12,26 @@ function About() {
     </p>
   );
 
-  const about2 = (
+  const personalInterests = (
     <p>Additionally, I also enjoy all-things video games, video editing, art and graphic design!</p>
   )
 
-  const about3 = (
+  const graduateApprenticeship = (
     <p>You can learn more about the Graduate Apprenticeship <a href="https://www.gla.ac.uk/undergraduate/degrees/softwareengineeringgraduateapprenticeship/">here</a>.</p>
   )
 
-    return (
-    <>
-    <section id="about">
+  return (
+  <section id="about">
     <h1 className="section">
-    /about-me
-      </h1>
-      <div id="about-description">
-      {[about]}
-      {[about2]}
+      /about-me
+    </h1>
+    <div id="about-description">
+      { aboutDescription }
+      { personalInterests }
       <br />
-      {[about3]}
-      </div>
-    </section>
-    </>
+      { graduateApprenticeship }
+    </div>
+  </section>
     );
   }
   
