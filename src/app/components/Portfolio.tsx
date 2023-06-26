@@ -84,15 +84,17 @@ class Portfolio extends React.Component {
           />
           <div className="carousel-caption">
             <Carousel.Caption>
-              <h3>{carouselProjects[key]["title"]}</h3>
-              <p>
-                {carouselProjects[key]["description"]}
-                <p>
-                  {carouselProjects[key]["tech"]}
-                </p>
-              </p>
-              {carouselProjects[key]["repo"]}
-              {carouselProjects[key]["demo"]}
+            <h3>{carouselProjects[key]["title"]}</h3>
+    <p>
+        {carouselProjects[key]["description"]}
+        <br/>
+        {carouselProjects[key]["tech"]}
+    </p>
+    <p>
+        {carouselProjects[key]["repo"]}
+        <br/>
+        {carouselProjects[key]["demo"]}
+    </p>
             </Carousel.Caption>
           </div>
         </Carousel.Item>
