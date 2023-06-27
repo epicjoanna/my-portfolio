@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+
 #portfolio {
     padding-top: 10%;
     padding-left: 40%;
@@ -41,6 +43,6 @@
 
   .carousel-caption h3 {
     font-size: 28px !important;
-    font-family: NTR !important;
+    font-family: 'NTR', sans-serif !important;
     color: #a0fb8e !important;
   }

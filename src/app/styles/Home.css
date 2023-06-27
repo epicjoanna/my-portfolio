@@ -1,4 +1,4 @@
-    #home {
+     #home {
         padding-top: 10%;
         position: absolute;
         left: 35%;
@@ -30,7 +30,7 @@
 
     .email-button {
         font-size: 20px !important;
-        font-family: 'NTR' !important;
+        font-family: 'NTR', sans-serif !important;
         font-weight: bold !important;
         text-decoration: none !important;
         text-transform: none !important;

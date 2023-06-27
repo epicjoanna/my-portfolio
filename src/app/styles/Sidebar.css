@@ -1,7 +1,7 @@
   #nav {
       color: #6ee78f;
       font-size: 22px;
-      font-family: 'NTR';
+      font-family: 'NTR', sans-serif;
       font-weight: bold;
       line-height: 130%;
   }

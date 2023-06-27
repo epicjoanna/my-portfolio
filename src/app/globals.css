@@ -1,18 +1,3 @@
-/* fonts */
-
-@font-face {
-  font-family: 'NTR';
-  src: local('NTR');
-  font-display: fallback,
-  url(/public/fonts/NTR/NTR-Regular.ttf) format('ttf');
-}
-
-@font-face {
-  font-family: 'Calibre';
-  src: local('Calibre'),
-       url('/public/fonts/Calibre/CalibreRegular.otf') format('otf');
-}
-
 /* styles */
 
 .content {
@@ -53,7 +38,7 @@ h2 {
 
 h3 {
   font-size: 22px !important;
-  font-family: NTR !important;
+  font-family: 'NTR', sans-serif !important;
   color: #a0fb8e !important;
 }
 
