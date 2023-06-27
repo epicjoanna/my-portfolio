@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import '../styles/Portfolio.css';
 
 
@@ -38,7 +39,7 @@ class Portfolio extends React.Component {
       tech: "Technologies",
       repo: "Repository",
       demo: "Demo",
-      image: "https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
     },
     "Item two": {
       title: "Item two",
@@ -46,7 +47,7 @@ class Portfolio extends React.Component {
       tech: "Technologies",
       repo: "Repository",
       demo: "Demo",
-      image: "https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
     },
     "Item three": {
       title: "Item three",
@@ -54,7 +55,7 @@ class Portfolio extends React.Component {
       tech: "Technologies",
       repo: "Repository",
       demo: "Demo",
-      image: "https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
     },
     "Item four": {
       title: "Item four",
@@ -62,7 +63,7 @@ class Portfolio extends React.Component {
       tech: "Technologies",
       repo: "Repository",
       demo: "Demo",
-      image: "https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
     },
   };
 
@@ -82,7 +83,6 @@ class Portfolio extends React.Component {
             src={carouselProjects[key]["image"]}
             alt={key}
           />
-          <div className="carousel-caption">
             <Carousel.Caption>
             <h3>{carouselProjects[key]["title"]}</h3>
     <p>
@@ -96,7 +96,6 @@ class Portfolio extends React.Component {
         {carouselProjects[key]["demo"]}
     </p>
             </Carousel.Caption>
-          </div>
         </Carousel.Item>
       ))}
       </Carousel>
