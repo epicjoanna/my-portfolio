@@ -30,10 +30,10 @@ function Sidebar() {
       {links.map((link, i) => (
       <div>{ link }</div>
       ))}
-      </nav>
       <div className="sidebar-logos">
       { socialLinks }
       </div>
+      </nav>
     </>
   );
 }
