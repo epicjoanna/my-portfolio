@@ -8,18 +8,14 @@
 a {
   text-decoration: none !important;
   color: #a0fb8e !important;
-  transition: all ease-in-out; 
 }
 
 a:hover {
   color: #028aa2 !important;
-  transform: scale(1.1); 
 }
 
 body {
-
   background-color: #0f2634 !important;
-  
 }
 
 h1 {
