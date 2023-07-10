@@ -33,18 +33,18 @@ class Portfolio extends React.Component {
   render() {
 
     const carouselProjects: Record<string, Project> = {
-    "Item one": {
-      title: "Item one",
-      description: "Description",
-      tech: "Technologies",
+    "My Portfolio": {
+      title: "my-portfolio",
+      description: "my personal website: joannajardine.com",
+      tech: "react/next.js",
       repo: "Repository",
       demo: "Demo",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
     },
-    "Item two": {
-      title: "Item two",
-      description: "Description",
-      tech: "Technologies",
+    "Next.js Course": {
+      title: "nextjs-course",
+      description: "my progress from the udemy course by Maximilian Schwarzmüller.",
+      tech: "react/next.js",
       repo: "Repository",
       demo: "Demo",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
