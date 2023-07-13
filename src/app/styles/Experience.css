@@ -11,18 +11,17 @@
 .container::after {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   right: -17px;
-  background-color: white;
-  top: 15px;
+  background-color: #a0fb8e;
+  top: 14px;
   border-radius: 50%;
   z-index: 1;
 }
 
 .timeline {
   position: relative;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -30,24 +29,24 @@
   content: "";
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: #a0fb8e;
   top: 0;
   bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+  margin-left: 7px;
 }
 
 .container {
-  padding: 10px 40px;
+  padding: 10px 100px;
   position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-.right {
-  left: 50%;
+  width: 100%;
 }
 
 .right::after {
-  left: -184px;
+  left: 0;
+}
+
+.date {
+  font-family: 'NTR', sans-serif;
+  font-size: 20px;
+  color: #a0fb8e;
 }
