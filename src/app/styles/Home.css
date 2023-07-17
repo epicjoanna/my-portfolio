@@ -1,58 +1,58 @@
-     #home {
-        padding-top: 10%;
-        position: absolute;
-        left: 35%;
-        width: 800px;
-    }
-    
-    .box {
-        background: url("../assets/me.jpg");
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-position: center center;
-        height: 350px;
-        width: 350px;
-        animation: animate 10s ease-in-out infinite;
-        transition: all 1s ease-in-out;
-    }
+#home {
+    padding-top: 10%;
+    position: absolute;
+    left: 35%;
+    width: 800px;
+}
 
-    @keyframes animate {
-        0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-        }
-        50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-        }
-        100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-        }
-    }
+.box {
+    background: url("../assets/me.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    width: 350px;
+    animation: animate 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
 
-    .email-button {
-        font-size: 20px !important;
-        font-family: 'NTR', sans-serif !important;
-        font-weight: bold !important;
-        text-decoration: none !important;
-        text-transform: none !important;
-        background: #a0fb8e !important;
-        color: #0f2634 !important;
-        transition: all .3s ease-in-out;
+@keyframes animate {
+    0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
+    50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
 
-    .email-button:hover {
-        color: #0f2634 !important;
-        background: #028aa2 !important;
-    }
+.email-button {
+    font-size: 20px !important;
+    font-family: 'NTR', sans-serif !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    background: #a0fb8e !important;
+    color: #0f2634 !important;
+    transition: all .3s ease-in-out;
+}
 
-    .button-section {
-        margin: 40px 0px 0px 0px;
-    }
+.email-button:hover {
+    color: #0f2634 !important;
+    background: #028aa2 !important;
+}
 
-    .Typist {
-    font-size: 60px;
-    display: inline-block;
-    }
-    
-    .Typist .Cursor--blinking {
-    color: white;
-    }
+.button-section {
+    margin: 40px 0px 0px 0px;
+}
+
+.Typist {
+font-size: 60px;
+display: inline-block;
+}
+
+.Typist .Cursor--blinking {
+color: white;
+}
