@@ -2,7 +2,9 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Links from "./Links";
+import FadeIn from "./FadeIn";
 import "../styles/Portfolio.css";
+import { Fade } from "@mui/material";
 
 class Portfolio extends React.Component {
   constructor(props: any) {
@@ -27,7 +29,8 @@ class Portfolio extends React.Component {
         description: "my personal website: joannajardine.com",
         repo: "https://github.com/epicjoanna/my-portfolio",
         demo: "https://www.joannajardine.com",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
       },
       "Next.js Course": {
         title: "nextjs-course",
@@ -58,38 +61,40 @@ class Portfolio extends React.Component {
 
     return (
       <section id="portfolio">
-        <h1 className="section">/portfolio</h1>
-        <div className="portfolio-content">
-          <p>
-            Check out more of my GitHub projects{" "}
-            <a href="https://github.com/epicjoanna?tab=repositories">here</a>!
-          </p>
+        <FadeIn>
+          <h1 className="section">/portfolio</h1>
+          <div className="portfolio-content">
+            <p>
+              Check out more of my GitHub projects{" "}
+              <a href="https://github.com/epicjoanna?tab=repositories">here</a>!
+            </p>
 
-          <div style={{ display: "block", width: 1000 }}>
-            <Carousel>
-              {Object.keys(carouselProjects).map((key, i) => (
-                <Carousel.Item interval={1500}>
-                  <img
-                    className="d-block w-100"
-                    src={carouselProjects[key]["image"]}
-                    alt={key}
-                  />
-                  <Carousel.Caption>
-                    <h3>{carouselProjects[key]["title"]}</h3>
-                    <p>
-                      {carouselProjects[key]["description"]}
-                      <br />
-                      <Links
-                        githubLink={carouselProjects[key]["repo"]}
-                        openLink={carouselProjects[key]["demo"]}
-                      ></Links>
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              ))}
-            </Carousel>
+            <div style={{ display: "block", width: 1000 }}>
+              <Carousel>
+                {Object.keys(carouselProjects).map((key, i) => (
+                  <Carousel.Item interval={1500}>
+                    <img
+                      className="d-block w-100"
+                      src={carouselProjects[key]["image"]}
+                      alt={key}
+                    />
+                    <Carousel.Caption>
+                      <h3>{carouselProjects[key]["title"]}</h3>
+                      <p>
+                        {carouselProjects[key]["description"]}
+                        <br />
+                        <Links
+                          githubLink={carouselProjects[key]["repo"]}
+                          openLink={carouselProjects[key]["demo"]}
+                        ></Links>
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            </div>
           </div>
-        </div>
+        </FadeIn>
       </section>
     );
   }

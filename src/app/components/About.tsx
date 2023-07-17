@@ -1,4 +1,6 @@
+import { Fade } from 'react-bootstrap';
 import '../styles/About.css';
+import FadeIn from './FadeIn';
 
 function About() {
 
@@ -22,6 +24,7 @@ function About() {
 
   return (
   <section id="about">
+    <FadeIn>
     <h1 className="section">
       /about-me
     </h1>
@@ -31,6 +34,7 @@ function About() {
       <br />
       { graduateApprenticeship }
     </div>
+    </FadeIn>
   </section>
     );
   }

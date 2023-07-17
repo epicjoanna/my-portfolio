@@ -1,5 +1,6 @@
 import * as React from "react";
 import "../styles/Experience.css";
+import FadeIn from "./FadeIn";
 
 class Experience extends React.Component {
   constructor(props: any) {
@@ -37,6 +38,7 @@ class Experience extends React.Component {
     return (
       <>
         <section id="experience">
+        <FadeIn>
           <h1 className="section">/experience</h1>
           <div className="experience-content">
             {Object.keys(prevExperience).map((key, i) => (
@@ -55,6 +57,7 @@ class Experience extends React.Component {
               </div>
             ))}
           </div>
+          </FadeIn>
         </section>
       </>
     );
