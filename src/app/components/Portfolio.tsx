@@ -30,7 +30,7 @@ class Portfolio extends React.Component {
         repo: "https://github.com/epicjoanna/my-portfolio",
         demo: "https://www.joannajardine.com",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
+          "https://imgur.com/MYWFPPW.png",
       },
       "Next.js Course": {
         title: "nextjs-course",
