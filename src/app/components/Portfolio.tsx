@@ -26,12 +26,12 @@ class Portfolio extends React.Component {
         repo: "https://github.com/epicjoanna/nextjs-course",
         demo: "Demo",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
+          "https://imgur.com/R3B1d4O.png",
       },
       {
         id: 3,
-        title: "Item three",
-        description: "Description",
+        title: "the odin project",
+        description: "my progress from the online course designed for learning web development.",
         repo: "Repository",
         demo: "Demo",
         image:
@@ -54,7 +54,7 @@ class Portfolio extends React.Component {
           <h1 className="section">/portfolio</h1>
           <div className="portfolio-content">
             <p>
-              Check out more of my GitHub projects{" "}
+              Check out what I've been working on {" "}
               <a href="https://github.com/epicjoanna?tab=repositories">here</a>!
             </p>
 
