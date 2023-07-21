@@ -8,19 +8,6 @@ interface LinksProps {
 }
 
 class Links extends React.Component<LinksProps> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      expanded: true,
-      activeKey: "1",
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
-  handleSelect(eventKey: any) {
-    this.setState({
-      activeKey: eventKey,
-    });
-  }
   render() {
     return (
       <span className="links">
