@@ -6,19 +6,6 @@ import "../styles/Sidebar.css";
 import React from "react";
 
 class Sidebar extends React.Component {
-  constructor(props: {} | Readonly<{}>) {
-    super(props);
-    this.state = {
-      expanded: true,
-      activeKey: "1",
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
-  handleSelect(eventKey: any) {
-    this.setState({
-      activeKey: eventKey,
-    });
-  }
 
   render() {
     const links = [

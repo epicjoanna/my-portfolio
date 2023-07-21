@@ -7,32 +7,19 @@ import "../styles/Portfolio.css";
 import { Fade } from "@mui/material";
 
 class Portfolio extends React.Component {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      expanded: true,
-      activeKey: "1",
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
-
-  handleSelect(eventKey: any) {
-    this.setState({
-      activeKey: eventKey,
-    });
-  }
 
   render() {
-    const carouselProjects: Record<string, any> = {
-      "My Portfolio": {
+    const carouselProjects = [
+      {
+        id: 1,
         title: "my-portfolio",
         description: "my personal website: joannajardine.com",
         repo: "https://github.com/epicjoanna/my-portfolio",
         demo: "https://www.joannajardine.com",
-        image:
-          "https://imgur.com/MYWFPPW.png",
+        image: "https://imgur.com/MYWFPPW.png",
       },
-      "Next.js Course": {
+      {
+        id: 2,
         title: "nextjs-course",
         description:
           "my progress from the udemy course by Maximilian Schwarzmüller.",
@@ -41,7 +28,8 @@ class Portfolio extends React.Component {
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
       },
-      "Item three": {
+      {
+        id: 3,
         title: "Item three",
         description: "Description",
         repo: "Repository",
@@ -49,7 +37,8 @@ class Portfolio extends React.Component {
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
       },
-      "Item four": {
+      {
+        id: 4,
         title: "Item four",
         description: "Description",
         repo: "Repository",
@@ -57,7 +46,7 @@ class Portfolio extends React.Component {
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
       },
-    };
+    ];
 
     return (
       <section id="portfolio">
@@ -71,26 +60,24 @@ class Portfolio extends React.Component {
 
             <div style={{ display: "block", width: 1000 }}>
               <Carousel>
-                {Object.keys(carouselProjects).map((key, i) => (
-                  <Carousel.Item interval={1500}>
-                    <img
-                      className="d-block w-100"
-                      src={carouselProjects[key]["image"]}
-                      alt={key}
-                    />
-                    <Carousel.Caption>
-                      <h3>{carouselProjects[key]["title"]}</h3>
-                      <p>
-                        {carouselProjects[key]["description"]}
-                        <br />
-                        <Links
-                          githubLink={carouselProjects[key]["repo"]}
-                          openLink={carouselProjects[key]["demo"]}
-                        ></Links>
-                      </p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                ))}
+                {carouselProjects.map(function (item) {
+                  return (
+                    <Carousel.Item interval={1500}>
+                      <img className="d-block w-100" src={item.image} />
+                      <Carousel.Caption>
+                        <h3>{item.title}</h3>
+                        <p>
+                          {item.description}
+                          <br />
+                          <Links
+                            githubLink={item.repo}
+                            openLink={item.demo}
+                          ></Links>
+                        </p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                  );
+                })}
               </Carousel>
             </div>
           </div>
