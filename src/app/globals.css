@@ -22,15 +22,16 @@ body {
 
 h1 {
   font-family:'Inter', sans-serif !important;
+  font-feature-settings: "ss03","cv02","cv11" !important;
   font-size: 48px !important;
   font-weight: 700 !important;
   color: #e5f6f7 !important;
   display: inline-block;
-  font-feature-settings: "ss03","cv02","cv11" !important;
 }
 
 h2 {
   font-family:'Inter', sans-serif !important;
+  font-feature-settings: "ss03","cv02","cv11" !important;
   font-size: 20px !important;
   font-weight: 400 !important;
   color: #e5f6f7 !important;
@@ -47,6 +48,8 @@ h3 {
 p {
   color: #e5f6f7 !important;
   line-height: 2em !important;
+  font-family: 'Inter', sans-serif !important;
+  font-feature-settings: "ss03","cv02","cv11" !important;
 }
 
 * {
