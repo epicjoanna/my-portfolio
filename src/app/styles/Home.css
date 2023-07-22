@@ -14,6 +14,7 @@
     width: 350px;
     animation: animate 10s ease-in-out infinite;
     transition: all 1s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 @keyframes animate {
@@ -29,7 +30,7 @@
 }
 
 .email-button {
-    font-size: 20px !important;
+    font-size: 22px !important;
     font-family: 'NTR', sans-serif !important;
     font-weight: bold !important;
     text-decoration: none !important;
@@ -48,11 +49,16 @@
     margin: 40px 0px 0px 0px;
 }
 
+.span-a {
+    display: inline-block;
+    flex-direction: row;
+}
+
 .Typist {
-font-size: 60px;
-display: inline-block;
+    font-size: 60px;
+    display: inline-block;
 }
 
 .Typist .Cursor--blinking {
-color: white;
+    color: white;
 }

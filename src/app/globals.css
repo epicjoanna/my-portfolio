@@ -38,7 +38,8 @@ h2 {
 }
 
 h3 {
-  font-size: 20px !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
   font-family: 'NTR', sans-serif !important;
   color: #a0fb8e !important;
 }

@@ -1,7 +1,7 @@
 #experience {
   padding-top: 10%;
   padding-left: 40%;
-  padding-bottom: 40%;
+  padding-bottom: 25%;
 }
 
 .experience-content {
@@ -48,5 +48,6 @@
 .date {
   font-family: 'NTR', sans-serif;
   font-size: 20px;
+  font-weight: bold;
   color: #a0fb8e;
 }
