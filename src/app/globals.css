@@ -21,10 +21,12 @@ body {
 }
 
 h1 {
+  font-family:'Inter', sans-serif !important;
   font-size: 60px !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
   color: #e5f6f7 !important;
   display: inline-block;
+  font-feature-settings: "ss03","cv02","cv11" !important;
 }
 
 h2 {
