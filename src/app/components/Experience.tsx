@@ -8,7 +8,7 @@ class Experience extends React.Component {
       {
         id: 1,
         jobTitle: "Graduate Apprentice Software Engineer",
-        date: "October 2022 - Present",
+        date: "OCTOBER 2022 — PRESENT",
         company: "Smarter Grid Solutions",
         description:
           "Working as part of the UI modernisation team for Cirrus Flex, using React/Next.js",
@@ -16,7 +16,7 @@ class Experience extends React.Component {
       {
         id: 2,
         jobTitle: "Software Engineering (Graduate Apprenticeship) BSc",
-        date: "October 2022 - Present",
+        date: "OCTOBER 2022 — PRESENT",
         company: "University of Glasgow",
         description: "",
       },
@@ -34,11 +34,10 @@ class Experience extends React.Component {
                     <div className="container right">
                       <div key={job.id}>
                         <p>
-                          <b>{job.jobTitle}</b>
+                          <span className="title">{job.jobTitle}</span> @{" "}
+                          <span className="company">{job.company}</span>
                           <br />
                           <span className="date">{job.date}</span>
-                          <br />
-                          <b>{job.company}</b>
                           <br />
                           {job.description}
                         </p>

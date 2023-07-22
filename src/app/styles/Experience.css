@@ -5,7 +5,7 @@
 }
 
 .experience-content {
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 .container::after {
@@ -36,18 +36,30 @@
 }
 
 .container {
-  padding: 10px 100px;
+  padding-left: 80px;
+  padding-bottom: 100px;
   position: relative;
-  width: 100%;
+  width: 800px;
 }
 
 .right::after {
   left: 0;
 }
 
+.title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
 .date {
   font-family: 'NTR', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.company {
+  font-family: 'NTR', sans-serif;
+  font-size: 24px;
   font-weight: bold;
   color: #a0fb8e;
 }
