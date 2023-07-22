@@ -11,7 +11,7 @@ class Experience extends React.Component {
         date: "OCTOBER 2022 — PRESENT",
         company: "Smarter Grid Solutions",
         description:
-          "Working as part of the UI modernisation team for Cirrus Flex, using React/Next.js",
+          "Working as part of the UI modernisation team for Cirrus Flex",
       },
       {
         id: 2,
@@ -34,10 +34,10 @@ class Experience extends React.Component {
                     <div className="container right">
                       <div key={job.id}>
                         <p>
+                          <span className="date">{job.date}</span>
+                          <br />
                           <span className="title">{job.jobTitle}</span> @{" "}
                           <span className="company">{job.company}</span>
-                          <br />
-                          <span className="date">{job.date}</span>
                           <br />
                           {job.description}
                         </p>
