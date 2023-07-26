@@ -11,14 +11,14 @@ class Experience extends React.Component {
         date: "OCTOBER 2022 — PRESENT",
         company: "Smarter Grid Solutions",
         description:
-          "Working as part of the UI modernisation team for Cirrus Flex",
+          "Working full-time in the renewable energy sector, part of the UI modernisation team for Fleet DERMS software Cirrus Flex.",
       },
       {
         id: 2,
         jobTitle: "Software Engineering (Graduate Apprenticeship) BSc",
         date: "OCTOBER 2022 — PRESENT",
         company: "University of Glasgow",
-        description: "",
+        description: "In my first year at university, building fundamental knowledge and skill for professional software development.",
       },
     ];
 
