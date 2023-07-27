@@ -64,3 +64,25 @@
   font-weight: bold;
   color: #a0fb8e;
 }
+
+@media only screen and (max-width: 600px) {
+
+  #experience {
+    text-align: center;
+    padding-left: 5%;
+    padding-bottom: 25%;
+  }
+
+  .timeline::after {
+    display: none;
+  }
+
+  .container {
+    padding: 0;
+    width: unset;
+  }
+
+  .container::after {
+    display: none;
+  }
+}

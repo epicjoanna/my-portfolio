@@ -43,3 +43,16 @@
   font-family: 'NTR', sans-serif !important;
   color: #a0fb8e !important;
 }
+
+@media only screen and (max-width: 600px) {
+
+  #portfolio {
+    text-align: center;
+    padding-left: 5%;
+    padding-bottom: 25%;
+  }
+
+  .carousel {
+    display: none;
+  }
+}

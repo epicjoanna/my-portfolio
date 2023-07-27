@@ -69,3 +69,15 @@ p {
   transform: none;
   visibility: visible;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .content {
+    padding: 0%;
+  }
+
+  p {
+    text-align: center;
+    max-width: unset;
+  }
+}
