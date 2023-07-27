@@ -52,6 +52,19 @@ p {
     font-feature-settings: "ss03","cv02","cv11" !important;
 }
 
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 * {
   margin: 0;
   padding: 0;
