@@ -15,7 +15,7 @@ import { BrowserRouter } from "react-router-dom";
 
 export default function Page() {
   return (
-    <main>
+    <main className="page">
       <link rel="preconnect" href="https://rsms.me/" />
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       <div className="sidebar">
