@@ -1,3 +1,5 @@
+![image](https://github.com/epicjoanna/my-portfolio/assets/127295327/2bc609d6-989a-4161-8d6d-bdffb52063c7)
+
 ## joannajardine.com
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
