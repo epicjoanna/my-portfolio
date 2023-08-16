@@ -39,12 +39,12 @@ class Portfolio extends React.Component {
       },
       {
         id: 4,
-        title: "Item four",
-        description: "Description",
-        repo: "Repository",
-        demo: "Demo",
+        title: "monkeytype (morse code)",
+        description: "added a funbox mode which allows you to practice typing in morse code.",
+        repo: "https://github.com/monkeytypegame/monkeytype/pull/4451",
+        demo: "https://monkeytype.com/",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
+          "https://imgur.com/StmvJBZ.png",
       },
     ];
 
