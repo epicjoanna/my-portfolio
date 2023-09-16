@@ -12,11 +12,11 @@ class Portfolio extends React.Component {
     const carouselProjects = [
       {
         id: 1,
-        title: "my-portfolio",
-        description: "my personal website: joannajardine.com",
-        repo: "https://github.com/epicjoanna/my-portfolio",
-        demo: "https://www.joannajardine.com",
-        image: "https://imgur.com/MYWFPPW.png",
+        title: "FREEDOM!!!",
+        description: "this year's entry for js13kgames, an endless runner based on the story of william wallace and the battle of stirling bridge.",
+        repo: "https://github.com/js13kGames/FREEEDOOOM",
+        demo: "https://js13kgames.com/games/freeedooom/index.html",
+        image: "https://imgur.com/So6NNUv.png",
       },
       {
         id: 2,
