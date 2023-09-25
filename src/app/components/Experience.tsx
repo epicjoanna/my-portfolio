@@ -12,6 +12,7 @@ class Experience extends React.Component {
         company: "Smarter Grid Solutions",
         description:
           "Working full-time in the renewable energy sector, part of the UI modernisation team for Fleet DERMS software Cirrus Flex.",
+        link: "https://www.smartergridsolutions.com/"
       },
       {
         id: 2,
@@ -19,6 +20,7 @@ class Experience extends React.Component {
         date: "OCTOBER 2022 — PRESENT",
         company: "University of Glasgow",
         description: "In my first year at university, building fundamental knowledge and skill for professional software development.",
+        link: "https://www.gla.ac.uk/undergraduate/degrees/softwareengineeringgraduateapprenticeship/"
       },
     ];
 
@@ -37,7 +39,7 @@ class Experience extends React.Component {
                           <span className="date">{job.date}</span>
                           <br />
                           <span className="title">{job.jobTitle}</span> @{" "}
-                          <span className="company">{job.company}</span>
+                          <a href={job.link}><span className="company">{job.company}</span></a>
                           <br />
                           {job.description}
                         </p>
