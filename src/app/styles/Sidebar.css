@@ -15,6 +15,7 @@
     padding-left: 5%;
     top: 10%;
     background-color: transparent;
+    z-index: 2;
   }
 
   .sidebar-logos {
