@@ -1,10 +1,11 @@
-import SendRoundedIcon from "@mui/icons-material/SendRounded";
+import FileOpenIcon from '@mui/icons-material/FileOpen';
 import Button from "@mui/material/Button";
 import Typist from "react-typist";
 import FadeIn from "./FadeIn";
 import "react-typist/dist/Typist.css";
 import "../styles/Home.css";
 import { Fade } from "@mui/material";
+
 
 function Home() {
   return (
@@ -17,16 +18,17 @@ function Home() {
         </Typist>
         <h2>Software Engineer</h2>
         <section className="button-section">
-          <h3>have questions?</h3>
           <Button
             className="email-button"
-            href="mailto:joannameijardine@gmail.com"
+            href="/Joanna_Jardine_Resume.pdf"
             variant="contained"
             size="large"
             disableElevation
-            startIcon={<SendRoundedIcon />}
+            startIcon={<FileOpenIcon />}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            email me!
+            View my CV
           </Button>
         </section>
         </div>
