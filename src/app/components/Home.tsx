@@ -5,8 +5,7 @@ import FadeIn from "./FadeIn";
 import "react-typist/dist/Typist.css";
 import "../styles/Home.css";
 import { Fade } from "@mui/material";
-
-
+// test
 function Home() {
   return (
     <section id="home">
