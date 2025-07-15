@@ -6,7 +6,8 @@ function About() {
 
   const aboutDescription = (
     <p>
-      I'm interested in full-stack development, regularly working on projects outside of work. 
+      I'm a software engineer based in Glasgow, Scotland.
+      Interested in full-stack development, I regularly build and contribute to projects outside of work. 
       I am currently working as a <b>Software Developer</b> at
       <a href="https://www.smartergridsolutions.com/"> Smarter Grid Solutions</a>, while doing my <b> 
         Graduate Apprenticeship Bachelor's of Science </b> degree for <b>Software Engineering </b> at the {" "}
@@ -15,7 +16,7 @@ function About() {
   );
 
   const personalInterests = (
-    <p>Additionally, I also enjoy all-things video games, video editing, art and graphic design!</p>
+    <p>Additionally, I also enjoy all-things video games, video editing, travelling, art and graphic design!</p>
   )
 
   const graduateApprenticeship = (

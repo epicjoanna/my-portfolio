@@ -19,7 +19,7 @@ class Experience extends React.Component {
         jobTitle: "Software Engineering (Graduate Apprenticeship) BSc",
         date: "OCTOBER 2022 — PRESENT",
         company: "University of Glasgow",
-        description: "In my first year at university, building fundamental knowledge and skill for professional software development.",
+        description: "In my third year at university, building my workplace project.",
         link: "https://www.gla.ac.uk/undergraduate/degrees/softwareengineeringgraduateapprenticeship/"
       },
     ];

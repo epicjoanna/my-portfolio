@@ -15,7 +15,7 @@ function Home() {
         <Typist startDelay={1000}>
           <h1>Joanna Jardine</h1>
         </Typist>
-        <h2>Software Engineer</h2>
+        <h2>Full-Stack Software Engineer</h2>
         <section className="button-section">
           <Button
             className="email-button"
