@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #0b1b25 !important;
+    font-family: 'NTR', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0.5rem 1rem;
+    height: auto;
+  }
+
+.ml-auto {
+    display: none;
+}
+  
+  .navbar .container,
+  .navbar .container-fluid {
+    padding-left: 0 !important; 
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .navbar-light .navbar-brand  {
+        display: none;
+    }
+  
+    .navbar-light .navbar-nav.me-auto .nav-link {
+        display: none;
+      }
+
+    .ml-auto {
+        display: flex;
+    }
+  }

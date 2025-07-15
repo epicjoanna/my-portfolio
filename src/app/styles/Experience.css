@@ -8,18 +8,6 @@
   padding-top: 10%;
 }
 
-.container::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: -17px;
-  background-color: #a0fb8e;
-  top: 14px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
 .timeline {
   position: relative;
   margin: 0 auto;
