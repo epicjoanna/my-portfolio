@@ -28,19 +28,22 @@ class Sidebar extends React.Component {
     ];
 
     return (
-      <>
-        <nav id="nav">
-          {links.map((link, i) => (
-            <FadeIn delay={`${i + 1}00ms`}>
-              <div>{link}</div>
-            </FadeIn>
-          ))}
-          <FadeIn>
-            <div className="sidebar-logos">{socialLinks}</div>
+      <nav id="nav" className="sidebar">
+        {links.map((link, i) => (
+          <FadeIn delay={`${i + 1}00ms`} key={i}>
+            <div>{link}</div>
           </FadeIn>
-        </nav>
-      </>
+        ))}
+        <FadeIn delay="600ms">
+          <div className="sidebar-logos">
+            {socialLinks.map((icon, i) => (
+              <div key={i}>{icon}</div>
+            ))}
+          </div>
+        </FadeIn>
+      </nav>
     );
+    
   }
 }
 

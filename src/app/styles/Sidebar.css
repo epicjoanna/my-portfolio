@@ -9,28 +9,28 @@
   .sidebar {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     position: fixed;
     left: 0;
-    padding-left: 5%;
     top: 10%;
-    background-color: transparent;
-    z-index: 2;
+    padding-left: 5%;
+    z-index: 10;
   }
-
+  
   .sidebar-logos {
-    padding-top: 660px;
-    height: 5px;
-    width: 70px;
+    position: fixed;
+    bottom: 30px;
+    left: 5%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 8px;
+    gap: 20px;
+    z-index: 10;
   }
-
+  
   @media only screen and (max-width: 600px) {
 
     #nav {
       display: none;
     }
   }
+
+  

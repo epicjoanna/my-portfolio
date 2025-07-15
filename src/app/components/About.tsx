@@ -16,7 +16,7 @@ function About() {
   );
 
   const personalInterests = (
-    <p>Additionally, I also enjoy all-things video games, video editing, travelling, art and graphic design!</p>
+    <p>I'm a hobby collector - I enjoy all-things video games, video editing, content creation, travelling, art and graphic design!</p>
   )
 
   const graduateApprenticeship = (
