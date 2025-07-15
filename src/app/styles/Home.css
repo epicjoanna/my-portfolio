@@ -11,7 +11,7 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-  height: 350px;
+  height: 250px;
   width: 350px;
   animation: animate 10s ease-in-out infinite;
   transition: all 1s ease-in-out;
