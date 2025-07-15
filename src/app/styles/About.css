@@ -10,17 +10,17 @@
 }
 
 @media only screen and (max-width: 600px) {
-
     #about {
-        text-align: center;
-        padding-top: 200%;
-        padding-left: 5%;
-        padding-bottom: 25%;
+      height: unset;
+      padding-left: unset;
+      padding-right: unset;
+      padding-top: 30%;
     }
-
-    #about-description {
-        text-align: center;
-        max-width: 95%;
+  
+    .about-description {
+      font-size: 18px;
+      text-align: justify;
     }
-}
+    
+  }
   
