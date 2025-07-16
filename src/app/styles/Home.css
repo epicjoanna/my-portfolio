@@ -67,7 +67,7 @@
 }
 
 .Typist .Cursor--blinking {
-  color: white;
+  color: #a0fb8e !important;
 }
 
 @media only screen and (max-width: 600px) {
