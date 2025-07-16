@@ -99,7 +99,7 @@ const JobList: React.FC = () => {
       >
         {Object.keys(experienceItems).map((key, i) => (
           <Tab key={key} label={isHorizontal ? `0${i}.` : key} {...a11yProps(i)} sx={{
-            fontSize: "1.2rem",
+            fontSize: "1rem",
             fontWeight: "bold",
             color: "#a0fb8e",
             "&.Mui-selected": {
@@ -134,7 +134,7 @@ const JobList: React.FC = () => {
                 <FadeInSection delay={`${j + 1}00ms`} key={j}>
                   <Box sx={{ display: "flex", alignItems: "flex-start", mb: 1 }}>
                   <ArrowRightIcon sx={{ color: "#a0fb8e", mt: "5px", mr: 1 }} />
-                  <Typography style={{ color: "#ffffff", fontSize: "1.1rem", fontFamily: "NTR, sans-serif" }}>
+                  <Typography style={{ color: "#ffffff", fontSize: "1rem", fontFamily: "NTR, sans-serif" }}>
                     {desc}
                   </Typography>
                   </Box>

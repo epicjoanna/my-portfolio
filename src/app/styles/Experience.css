@@ -7,21 +7,6 @@
   padding-top: 10%;
 }
 
-.timeline {
-  position: relative;
-  margin: 0 auto;
-}
-
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: #a0fb8e;
-  top: 0;
-  bottom: 0;
-  margin-left: 7px;
-}
-
 .container {
   padding-left: 80px;
   padding-bottom: 100px;
@@ -60,10 +45,6 @@
     padding-bottom: 25%;
   }
 
-  .timeline::after {
-    display: none;
-  }
-
   .container {
     padding: 0;
     width: unset;
@@ -71,5 +52,29 @@
 
   .container::after {
     display: none;
+  }
+
+    #experience {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .jss1 {
+    height: unset !important;
+    flex-direction: column !important;
+  }
+
+  .makeStyles-root-1 {
+    height: unset !important;
+    width: unset;
+    flex-direction: column;
+  }
+
+  .joblist-job-title {
+    font-size: 22px;
+  }
+
+  .joblist-job-company {
+    font-size: 22px;
   }
 }
