@@ -12,18 +12,17 @@ class NavBar extends React.Component {
     return (
       <Navbar fixed="top" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#">Joanna Jardine</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <Nav.Link href="mailto:joannameijardine@gmail.com">
-                <EmailRoundedIcon style={{ fontSize: 20 }}></EmailRoundedIcon>
+                <EmailRoundedIcon style={{ fontSize: 32 }}></EmailRoundedIcon>
               </Nav.Link>
               <Nav.Link href="https://github.com/epicjoanna" target="_blank">
-                <GitHubIcon style={{ fontSize: 19 }}></GitHubIcon>
+                <GitHubIcon style={{ fontSize: 32 }}></GitHubIcon>
               </Nav.Link>
               <Nav.Link href="https://www.linkedin.com/in/joannajardine/" target="_blank">
-                <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
+                <LinkedInIcon style={{ fontSize: 32 }}></LinkedInIcon>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

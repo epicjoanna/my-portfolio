@@ -1,15 +1,21 @@
 .navbar {
-    background-color: #0b1b25 !important;
-    font-family: 'NTR', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    padding: 0.5rem 1rem;
-    height: auto;
-  }
+  background-color: #0b1b25 !important;
+  font-family: 'NTR', sans-serif;
+  font-weight: bold;
+
+  padding: 0.5rem 1rem;
+  height: auto;
+}
 
 .ml-auto {
-    display: none;
+  display: none;
 }
+
+ .name {
+    color: #a0fb8e !important;
+    text-align: left;
+    font-size: 24px;
+  }
   
   .navbar .container,
   .navbar .container-fluid {
@@ -19,6 +25,7 @@
   }
   
   @media only screen and (max-width: 600px) {
+
     .navbar-light .navbar-brand  {
         display: none;
     }
@@ -29,5 +36,9 @@
 
     .ml-auto {
         display: flex;
+    }
+
+    .name {
+      display: none;
     }
   }
