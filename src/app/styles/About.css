@@ -1,12 +1,12 @@
 #about {
-    padding-top: 10%;
-    padding-left: 45%;
     padding-bottom: 25%;
+    position: relative; 
+    display: flex;
 }
 
 #about-description {
     padding-top: 5%;
-    max-width: 95%;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 600px) {
