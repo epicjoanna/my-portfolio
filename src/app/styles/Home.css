@@ -1,5 +1,5 @@
 #home {
-  padding-top: 10%;
+  padding-top: 15%;
   position: relative; 
   display: flex;
   justify-content: center;
@@ -72,6 +72,10 @@
 
 @media only screen and (max-width: 600px) {
 
+  #home {
+    padding-top: 30%;
+  }
+
   h1 {
     font-size: 32px !important;
     white-space: nowrap;
@@ -87,6 +91,10 @@
   }
 
 @media only screen and (max-width: 768px) {
+  #home {
+    padding-top: 50%;
+  }
+
   .box {
     height: 180px;
     width: 180px;
