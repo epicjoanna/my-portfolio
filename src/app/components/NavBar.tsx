@@ -5,13 +5,13 @@ import Navbar from "react-bootstrap/Navbar";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LightModeIcon from '@mui/icons-material/LightMode';
 import "../styles/NavBar.css";
 
 class NavBar extends React.Component {
   render() {
     return (
       <Navbar fixed="top" className="bg-body-tertiary">
-        <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
@@ -25,8 +25,12 @@ class NavBar extends React.Component {
                 <LinkedInIcon style={{ fontSize: 32 }}></LinkedInIcon>
               </Nav.Link>
             </Nav>
-          </Navbar.Collapse>
-        </Container>
+      <Nav className="sun-icon">
+        <Nav.Link onClick={() => console.log("Toggle light mode")}>
+          <LightModeIcon style={{ fontSize: 32 }} />
+        </Nav.Link>
+      </Nav>
+      </Navbar.Collapse>
       </Navbar>
     );
   }

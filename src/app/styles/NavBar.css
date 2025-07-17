@@ -11,6 +11,12 @@
   display: none;
 }
 
+.sun-icon {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
  .name {
     color: #a0fb8e !important;
     text-align: left;
