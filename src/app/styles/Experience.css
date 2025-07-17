@@ -20,19 +20,19 @@
 
 .title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .date {
   font-family: 'NTR', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   color: #a0fb8e;
 }
 
 .company {
   font-family: 'NTR', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #a0fb8e;
 }
@@ -66,10 +66,10 @@
   }
 
   .joblist-job-title {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .joblist-job-company {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 }

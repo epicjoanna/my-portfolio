@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import NavBar from "./components/NavBar";
+import Credits from "./components/Credits";
 
 export default function Page() {
   return (
@@ -21,6 +22,7 @@ export default function Page() {
         <About />
         <Experience />
         <Portfolio />
+        <Credits />
       </div>
     </main>
   );
