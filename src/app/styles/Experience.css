@@ -40,9 +40,10 @@
 @media only screen and (max-width: 600px) {
 
   #experience {
-    text-align: center;
-    padding-left: 5%;
-    padding-bottom: 25%;
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: 30%;
   }
 
   .container {
@@ -62,12 +63,6 @@
   .jss1 {
     height: unset !important;
     flex-direction: column !important;
-  }
-
-  .makeStyles-root-1 {
-    height: unset !important;
-    width: unset;
-    flex-direction: column;
   }
 
   .joblist-job-title {

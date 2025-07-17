@@ -46,9 +46,10 @@
 @media only screen and (max-width: 600px) {
 
   #portfolio {
-    text-align: center;
-    padding-left: 5%;
-    padding-bottom: 25%;
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: 30%;
   }
 
   .carousel {
