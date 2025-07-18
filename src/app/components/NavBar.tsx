@@ -6,10 +6,17 @@ import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 import "../styles/NavBar.css";
 
-class NavBar extends React.Component {
-  render() {
+interface NavBarProps {
+  toggleTheme: () => void;
+  mode: 'light' | 'dark';
+}
+
+
+const NavBar: React.FC<NavBarProps> = ({ toggleTheme, mode }) => {
+
     return (
       <Navbar fixed="top" className="bg-body-tertiary">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,15 +32,19 @@ class NavBar extends React.Component {
                 <LinkedInIcon style={{ fontSize: 32 }}></LinkedInIcon>
               </Nav.Link>
             </Nav>
-      <Nav className="sun-icon">
-        <Nav.Link onClick={() => console.log("Toggle light mode")}>
-          <LightModeIcon style={{ fontSize: 32 }} />
-        </Nav.Link>
-      </Nav>
+            <Nav className="sun-icon">
+          <Nav.Link onClick={toggleTheme}>
+            {mode === "light" ? (
+              <DarkModeIcon style={{ fontSize: 32 }} />
+            ) : (
+              <LightModeIcon style={{ fontSize: 32 }} />
+            )}
+          </Nav.Link>
+        </Nav>
       </Navbar.Collapse>
       </Navbar>
     );
   }
-}
+
 
 export default NavBar;

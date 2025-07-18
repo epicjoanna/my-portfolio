@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #0b1b25 !important;
+  background-color: var(--bg) !important;
   font-family: 'NTR', sans-serif;
   font-weight: bold;
 
@@ -16,12 +16,6 @@
   display: flex;
   align-items: center;
 }
-
- .name {
-    color: #a0fb8e !important;
-    text-align: left;
-    font-size: 1.5rem;
-  }
   
   .navbar .container,
   .navbar .container-fluid {

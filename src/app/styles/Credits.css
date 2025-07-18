@@ -6,7 +6,7 @@
   
   .ending-credits {
     font-family: "NTR", sans-serif;
-    color: #a0fb8e;
+    color: var(--highlight);
     text-align: center;
     width: 100%;
     font-size: 16px;

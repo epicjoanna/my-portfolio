@@ -27,13 +27,12 @@
   overflow: hidden;
 }
 
-
 .carousel-indicators {
   bottom:-50px;
 }
 
 .carousel-indicators .active {
-  background-color: #a0fb8e;
+  background-color: var(--highlight);
 }
 
 .carousel-caption {
@@ -46,9 +45,9 @@
   }
 
 .carousel-caption h3 {
-  font-size: 1.8rem !important;
+  font-size: 28px !important;
   font-family: 'NTR', sans-serif !important;
-  color: #a0fb8e !important;
+  color: var(--highlight) !important;
 }
 
 @media only screen and (max-width: 1200px) {

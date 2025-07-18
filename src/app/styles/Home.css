@@ -35,7 +35,7 @@
   font-weight: bold !important;
   text-decoration: none !important;
   text-transform: none !important;
-  background: #a0fb8e !important;
+  background: var(--highlight);
   color: #0f2634 !important;
   transition: all 0.3s ease-in-out;
   transform: translateX(50px); 
@@ -67,7 +67,7 @@
 }
 
 .Typist .Cursor--blinking {
-  color: #a0fb8e !important;
+  color: var(--highlight) !important;
 }
 
 @media only screen and (max-width: 600px) {

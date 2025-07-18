@@ -64,87 +64,98 @@ const JobList: React.FC = () => {
   }, []);
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: isHorizontal ? "column" : "row",
-        backgroundColor: "#0b1b25",
-        borderRadius: 2,
-        width: "100%",
-        minHeight: 300,
-        
-      }}
-    >
-      <Tabs
-        orientation={isHorizontal ? "horizontal" : "vertical"}
-        variant={isHorizontal ? "fullWidth" : "scrollable"}
-        value={value}
-        onChange={(_, newValue) => setValue(newValue)}
+<Box
+  sx={{
+    display: "flex",
+    flexDirection: isHorizontal ? "column" : "row",
+    backgroundColor: "var(--bg)",
+    borderRadius: 2,
+    width: "100%",
+    minHeight: 300,
+  }}
+>
+  <Tabs
+    orientation={isHorizontal ? "horizontal" : "vertical"}
+    variant={isHorizontal ? "fullWidth" : "scrollable"}
+    value={value}
+    onChange={(_, newValue) => setValue(newValue)}
+    sx={{
+      borderRight: isHorizontal ? "none" : "1px solid var(--highlight)",
+      minWidth: isHorizontal ? "100%" : 200,
+      "& .MuiTab-root": {
+        color: "var(--text)",
+        fontFamily: "NTR, sans-serif",
+        fontWeight: "bold",
+        alignItems: "flex-start",
+      },
+      "& .Mui-selected": {
+        color: "var(--highlight) !important",
+      },
+      "& .MuiTabs-indicator": {
+        backgroundColor: "var(--highlight)",
+      }
+    }}
+  >
+    {Object.keys(experienceItems).map((key, i) => (
+      <Tab
+        key={key}
+        label={isHorizontal ? `0${i}.` : key}
+        {...a11yProps(i)}
         sx={{
-          borderRight: isHorizontal ? "none" : `1px solid ${theme.palette.divider}`,
-          minWidth: isHorizontal ? "100%" : 200,
-          "& .MuiTab-root": {
-            color: "#ccc",
-            fontFamily: "NTR, sans-serif",
-            fontWeight: "bold",
-            alignItems: "flex-start",
+          fontSize: "1rem",
+          fontWeight: "bold",
+          color: "var(--highlight)",
+          "&.Mui-selected": {
+            color: "var(--highlight)",
           },
-          "& .Mui-selected": {
-            color: "#a0fb8e !important",
-          },
-          "& .MuiTabs-indicator": {
-            backgroundColor: "#a0fb8e",
-          }
         }}
-      >
-        {Object.keys(experienceItems).map((key, i) => (
-          <Tab key={key} label={isHorizontal ? `0${i}.` : key} {...a11yProps(i)} sx={{
-            fontSize: "1rem",
+      />
+    ))}
+  </Tabs>
+
+  <Box sx={{ flexGrow: 1 }}>
+    {Object.entries(experienceItems).map(([key, job], i) => (
+      <TabPanel key={key} value={value} index={i}>
+        <Typography
+          variant="h6"
+          sx={{
+            fontSize: "1.5rem",
             fontWeight: "bold",
-            color: "#a0fb8e",
-            "&.Mui-selected": {
-            color: "#a0fb8e",
-            },
-          }} />
-        ))}
-      </Tabs>
+            color: "var(--text)",
+            fontFamily: "NTR, sans-serif",
+          }}
+        >
+          {job.jobTitle}
+          <span style={{ color: "var(--highlight)" }}> {key}</span>
+        </Typography>
 
-      <Box sx={{ flexGrow: 1 }}>
-        {Object.entries(experienceItems).map(([key, job], i) => (
-          <TabPanel key={key} value={value} index={i}>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: "1.5rem",
-                fontWeight: "bold",
-                color: "#ffffff",
-                fontFamily: "NTR, sans-serif",
-              }}
-            >
-              {job.jobTitle}
-              <span style={{ color: "#a0fb8e" }}> {key}</span>
-            </Typography>
+        <Typography variant="body2" sx={{ fontSize: "1rem", color: "var(--text)", opacity: 0.7, mb: 2 }}>
+          {job.duration}
+        </Typography>
 
-            <Typography variant="body2" sx={{ fontSize: "1rem", color: "#ccc", mb: 2 }}>
-              {job.duration}
-            </Typography>
+        <ul className="job-description">
+          {job.desc.map((desc, j) => (
+            <FadeInSection delay={`${j + 1}00ms`} key={j}>
+              <Box sx={{ display: "flex", alignItems: "flex-start", mb: 1 }}>
+                <ArrowRightIcon sx={{ color: "var(--highlight)", mt: "5px", mr: 1 }} />
+                <Typography
+                  style={{
+                    color: "var(--text)",
+                    fontSize: "1.1rem",
+                    fontFamily: "NTR, sans-serif"
+                  }}
+                >
+                  {desc}
+                </Typography>
+              </Box>
+            </FadeInSection>
+          ))}
+        </ul>
+      </TabPanel>
+    ))}
+  </Box>
+</Box>
 
-            <ul className="job-description">
-              {job.desc.map((desc, j) => (
-                <FadeInSection delay={`${j + 1}00ms`} key={j}>
-                  <Box sx={{ display: "flex", alignItems: "flex-start", mb: 1 }}>
-                  <ArrowRightIcon sx={{ color: "#a0fb8e", mt: "5px", mr: 1 }} />
-                  <Typography style={{ color: "#ffffff", fontSize: "1rem", fontFamily: "NTR, sans-serif" }}>
-                    {desc}
-                  </Typography>
-                  </Box>
-                </FadeInSection>
-              ))}
-            </ul>
-          </TabPanel>
-        ))}
-      </Box>
-    </Box>
   );
 };
 
