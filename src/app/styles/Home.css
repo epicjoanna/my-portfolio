@@ -42,8 +42,8 @@
 }
 
 .email-button:hover {
-  color: #0f2634 !important;
-  background: #028aa2 !important;
+  color: var(--button-text) !important;
+  background: var(--hover-highlight) !important;
 }
 
 .button-section {

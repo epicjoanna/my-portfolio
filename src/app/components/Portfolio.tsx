@@ -12,6 +12,15 @@ class Portfolio extends React.Component {
     const carouselProjects = [
       {
         id: 1,
+        title: "monkeytype (morse code)",
+        description: "added a funbox mode which allows you to practice typing in morse code.",
+        repo: "https://github.com/monkeytypegame/monkeytype/pull/4451",
+        demo: "https://monkeytype.com/",
+        image:
+          "https://imgur.com/StmvJBZ.png",
+      },
+      {
+        id: 2,
         title: "FREEDOM!!!",
         description: "this year's entry for js13kgames, an endless runner based on the story of william wallace and the battle of stirling bridge.",
         repo: "https://github.com/js13kGames/FREEEDOOOM",
@@ -19,32 +28,23 @@ class Portfolio extends React.Component {
         image: "https://imgur.com/So6NNUv.png",
       },
       {
-        id: 2,
-        title: "nextjs-course",
+        id: 3,
+        title: "project 3",
         description:
-          "my progress from the udemy course by Maximilian Schwarzmüller.",
+          "description",
         repo: "https://github.com/epicjoanna/nextjs-course",
         demo: "Demo",
         image:
           "https://imgur.com/R3B1d4O.png",
       },
       {
-        id: 3,
-        title: "the odin project",
-        description: "my progress from the online course designed for learning web development.",
+        id: 4,
+        title: "project 4",
+        description: "description",
         repo: "Repository",
         demo: "Demo",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
-      },
-      {
-        id: 4,
-        title: "monkeytype (morse code)",
-        description: "added a funbox mode which allows you to practice typing in morse code.",
-        repo: "https://github.com/monkeytypegame/monkeytype/pull/4451",
-        demo: "https://monkeytype.com/",
-        image:
-          "https://imgur.com/StmvJBZ.png",
       },
     ];
 
