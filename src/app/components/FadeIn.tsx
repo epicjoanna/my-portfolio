@@ -7,20 +7,25 @@ interface FadeInProps {
 
 const FadeIn: React.FC<FadeInProps> = ({ children, delay }) => {
   const [isVisible, setVisible] = useState(false);
-  const domRef = useRef<HTMLDivElement | null>(null);
+  const domRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => setVisible(entry.isIntersecting));
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      });
     });
 
-    if (domRef.current) {
-      observer.observe(domRef.current);
+    const current = domRef.current;
+    if (current) {
+      observer.observe(current);
     }
 
     return () => {
-      if (domRef.current) {
-        observer.unobserve(domRef.current);
+      if (current) {
+        observer.unobserve(current);
       }
     };
   }, []);
