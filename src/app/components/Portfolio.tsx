@@ -30,12 +30,11 @@ class Portfolio extends React.Component {
       {
         id: 3,
         title: "project 3",
-        description:
-          "description",
-        repo: "https://github.com/epicjoanna/nextjs-course",
+        description: "description",
+        repo: "Repository",
         demo: "Demo",
         image:
-          "https://imgur.com/R3B1d4O.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
       },
       {
         id: 4,

@@ -35,15 +35,15 @@
   font-weight: bold !important;
   text-decoration: none !important;
   text-transform: none !important;
-  background: var(--highlight);
-  color: #0f2634 !important;
+  background: var(--highlight) !important;
+  color: var(--button-text) !important;
   transition: all 0.3s ease-in-out;
   transform: translateX(50px); 
 }
 
 .email-button:hover {
   color: var(--button-text) !important;
-  background: var(--hover-highlight) !important;
+  background: var(--hover-highlight);
 }
 
 .button-section {
