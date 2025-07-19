@@ -13,6 +13,12 @@ import { useEffect, useMemo, useState } from "react";
 export default function Page() {
   const [mode, setMode] = useState<'light' | 'dark'>('dark');
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      document.body.classList.toggle("light-mode", mode === "light");
+    }
+  }, [mode]);
+  
   const theme = useMemo(
     () =>
       createTheme({
@@ -38,14 +44,7 @@ export default function Page() {
       }),
     [mode]
   );
-  
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      document.body.classList.toggle("light-mode", mode === "light");
-    }
-  }, [mode]);
 
-  
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -53,10 +52,9 @@ export default function Page() {
       <link rel="preconnect" href="https://rsms.me/" />
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       <NavBar
-  toggleTheme={() => setMode(prev => (prev === "light" ? "dark" : "light"))}
-  mode={mode}
-/>
-
+      toggleTheme={() => setMode(prev => (prev === "light" ? "dark" : "light"))}
+      mode={mode}
+      />
       <div className="sidebar">
         <Sidebar />
       </div>
