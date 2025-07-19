@@ -2,6 +2,7 @@
     padding-bottom: 25%;
     position: relative; 
     display: flex;
+    scroll-margin-top: 12rem;
 }
 
 #about-description {
