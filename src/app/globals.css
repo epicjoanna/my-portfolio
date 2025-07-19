@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  color: #028aa2 !important;
+  color: var(--hover-highlight) !important;
 }
 
 h1 {
